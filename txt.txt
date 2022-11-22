@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ******************************************************************************************** -->
+    <div class="img1">
+      <div class="heading"><h1>fixed</h1></div>
+    </div>
+    <!-- ******************************************************************************************** -->
+    <section>
+      <h1>fixed background image</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+        dolor impedit amet tempore nesciunt veritatis magni sequi excepturi,
+        omnis laborum repellendus modi minus recusandae exercitationem harum?
+        Aliquid iste, eius inventore eum sed vel veniam nisi voluptatibus! Error
+        accusantium nam iure sapiente culpa debitis vero obcaecati adipisci
+        porro, cum sint nihil ullam quos nesciunt reprehenderit praesentium
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est
+        fugiat incidunt modi reprehenderit mollitia. Nisi enim tempora hic
+        repellat eos libero aspernatur ab magnam, dignissimos rerum numquam
+        cupiditate placeat maxime temporibus dolorem quos aperiam laboriosam
+        corrupti minus. Sed modi aperiam sapiente dicta cumque hic, iusto odio
+        nisi quasi sint maiores corrupti ratione, rerum minus porro. Ab incidunt
+        recusandae impedit assumenda, excepturi libero doloremque et maxime sint
+        error nam, eligendi accusantium esse consequuntur, inventore quae? Iure,
+        hic officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Adipisci quasi veniam, esse modi eveniet ducimus ratione doloremque
+        commodi. Beatae nihil id cum! Numquam quae eos nulla dolorum unde nobis
+        natus vitae alias, esse iste quos vero labore, eligendi laborum
+        perspiciatis dolores aliquam, delectus ex! Fugiat animi facere sint
+        veritatis commodi labore quo optio, tempore reprehenderit voluptate
+        voluptates odit. Libero corporis nemo vero, at a reprehenderit, facilis
+        officiis optio ipsam quibusdam facere ea alias et cupiditate recusandae
+        modi doloremque rem. Dolor atque cupiditate, voluptas ipsa provident
+        expedita a dignissimos dolores possimus repudiandae magnam sapiente
+        quaerat quia. Modi, repellat praesentium facilis aspernatur, vel iure
+        quod consequuntur ducimus, voluptatum saepe quae odit officia id
+        repellendus rem alias laboriosam? Pariatur debitis, officia, aut eos
+        dolor quidem, voluptas eum distinctio explicabo autem quia animi nisi
+        soluta asperiores consectetur eligendi placeat quos hic commodi
+        incidunt? Cupiditate iste ex error? Debitis illo quod inventore saepe
+        ipsa similique libero ullam facilis. Ex ipsa debitis minima, illo quia,
+        vitae praesentium illum nostrum quibusdam consequuntur quis pariatur
+        ducimus repudiandae tempora, atque ad. Eius voluptatum, ea repellat
+        labore, nisi expedita aspernatur soluta, magni pariatur vitae nostrum
+        repudiandae. Ullam sit inventore nisi at facere velit quasi labore amet
+        repudiandae. Aperiam, ullam sed!
+      </p>
+    </section>
+
+    <!-- ******************************************************************************************** -->
+    <div class="img2"></div>
+    <!-- ******************************************************************************************** -->
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis a
+        minima provident inventore at nulla repudiandae praesentium quis magni,
+        accusantium asperiores, quod fuga similique dicta reiciendis aut
+        repellendus exercitationem veniam debitis dolores! Consectetur dicta
+        nisi consequuntur ipsa velit reprehenderit natus, sapiente maxime
+        eligendi nulla assumenda vel alias accusantium qui in numquam! Libero et
+        odit aliquid sequi aut adipisci quod magnam corporis voluptate. Ad,
+        blanditiis eius? Aliquid odio, eos voluptatibus soluta eveniet incidunt
+        esse odit inventore placeat illum expedita!
+      </p>
+    </section>
+    <!-- ******************************************************************************************** -->
+    <div class="img3"></div>
+    <!-- ******************************************************************************************** -->
+  </body>
+</html>
+
+
+html,body{
+    height:100%;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 180%; */
+    /* color:white;
+    background-color: black; */
+    text-align: center;  
+}
+.img1
+{
+    background: url("https://wallpaperaccess.com/full/1471290.jpg");
+    min-height: 100%;
+
+}
+.img2
+{
+    background:url("https://wallpaperaccess.com/full/106956.jpg");
+    min-height:100%;
+}
+.img3
+{
+    background: url("https://wallpapercave.com/wp/wp5493874.jpg");
+    min-height:100%;
+}
+section p img
+{
+    position:fixed;
+    /* background-position: center; */
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img1,.img2,.img3
+{
+    /* position:relative; */
+    opacity: .85;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+.heading h1{
+    position: absolute;
+    top:50%;
+    width:100%;
+    font-size: 500%;
+    font-weight: 600px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+@media (max-width:760px){
+    .heading .h1
+    {
+        font-size: 250%;
+
+    }
+    
+}
+*****************************************************
+@media (max-width: 1160px) {
+  .width {
+    padding: 0 50px;
+  }
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .nav .menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    background-color: black;
+    text-align: center;
+    /* padding-top: 80px; */
+    transition: all 0.3s ease;
+  }
+  .nav .menu.active {
+    left: 0;
+  }
+  .nav .menu li {
+    display: block;
+    margin-top: 45px;
+    animation: alldown 2s 2 ease;
+  }
+  .nav .menu li a {
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .home .content {
+    backdrop-filter: none;
+  }
+  .nav .menu li a:hover {
+    color: crimson;
+  }
+  .home .content .text2 {
+    font-size: 65px;
+  }
+  .home .content .text3 {
+    font-size: 35px;
+  }
+  .home .content .text3 span {
+    font-size: 35px;
+  }
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+  @keyframes alldown {
+    0% {
+      margin: 75px;
+    }
+    50% {
+      margin: 0px;
+    }
+
+    100% {
+      margin: 75px;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .home .content .text2 {
+    font-size: 50px;
+  }
+  .home .content .text3 {
+    font-size: 32px;
+  }
+  .home .content .text3 span {
+    font-size: 32px;
+  }
+  .about .about-content .left img {
+    height: 270px;
+    width: 270px;
+  }
+  .about .about-content .right p {
+    text-align: justify;
+    /* margin-left:30%; */
+    font-size: 15px;
+  }
+  .about .about-content .column {
+    width: 50%;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+  .services .serv-content .card,
+  .skills .skill-content .column,
+  .contact .contact-content .column,
+  .contact form .fields input,
+  .contact form .fields .field input,
+  .contact form .fields .textarea textarea 
+  {
+    width: 100%;
+    text-align: justify;
+  }
+  .skills .skill-content .bars {
+    margin-top: 20px;
+  }
+  input[type="checkbox"] {
+    width: 16px;
+    /* display: none; */
+  }
+  input[type="checkbox"]:checked ~ .contact form {
+    background: black;
+    margin-left: -50px;
+  }
+
+  .contact form {
+    background: rgb(255, 255, 255);
+    margin-left: -50px;
+    
+  }
+  .sigma .title:before,
+  .about .about-me:before,
+  .services .title:before,
+  .skills .title:before,
+  .contact .title:before
+
+  {
+    width:240px;
+  }
+}
+@media (max-width: 710px) {
+  .home .content .text2 {
+    font-size: 40px;
+  }
+  .home .content .text3 {
+    font-size: 25px;
+  }
+  .home .content .text3 span {
+    font-size: 25px;
+  }
+  .services .serv-content .card {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .home .content .text2 {
+    font-size: 35px;
+  }
+  .home .content .text3 {
+    font-size: 15px;
+  }
+  .home .content .text3 span {
+    font-size: 15px;
+  }
+}
